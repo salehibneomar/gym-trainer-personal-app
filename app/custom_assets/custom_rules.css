@@ -1,0 +1,78 @@
+.profile-page-propic{
+    margin: 0 auto;
+    padding: 3px;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    border: 3px solid #adb5bd;
+    border-radius: 50%;
+}
+
+.client-table-profile-pic{
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.table-overflow-fix{
+    overflow-x: auto !important;
+}
+
+.text-truncate{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-truncate-dt{
+    display: inline-block;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-preview-thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media print {
+    @page {
+        size: A4 !important;
+        margin: 2mm 5mm;
+    }
+    footer {page-break-after: always;}
+}
+
+@media all and (max-width: 1300px){
+    .profile-page-propic{
+        min-width: 120px;
+        min-height: 120px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .text-truncate{
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 800px){
+    .text-truncate{
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .text-truncate{
+        width: 150px;
+    }
+}
